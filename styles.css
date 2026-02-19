@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: #000;
+}
+
+body {
+  font-family: 'Lexend', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #202020;
+  color: #e5e5e5;
+}
+
+a {
+  text-decoration: none;
+  color: #e5e5e5;
+  transition: 0.3s;
+}
+a:hover {
+  color: #fed700;
+}
+
+ul {
+  list-style: none;
+}
+img {
+  max-width: 150%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1170px;
+  margin: auto;
+}
+
+/* --------------------------- Header --------------------------- */
+.header-area {
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+}
+
+
+
+.logo .fa-bolt {
+  color: #fed700;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.navbar a {
+  font-size: 15px;
+  font-weight: 500;
+}
+.navbar a.active,
+.navbar a:hover {
+  color: #fed700;
+}
+
+.menu_icon {
+  display: none;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* --------------------------- Hero --------------------------- */
+.FirstElement {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem 0;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.profile-photo {
+  width: 280px;
+  height: 400px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid rgb(129, 126, 126);
+  box-shadow: 0 0 20px rgba(132, 126, 126, 0.6); 
+}
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+
+.profile-text {
+  max-width: 600px;
+}
+.profile-text h5 {
+  color: #bbb;
+  font-size: 15px;
+}
+.profile-text h1 {
+  color: #fed700;
+  font-size: 3rem;
+  margin: 10px 0;
+}
+.profile-text p {
+  color: #ddd;
+  margin-bottom: 20px;
+}
+.profile-text .h{
+  font-weight: bold;
+  background: linear-gradient(to right, #fed700 50%, #ddd 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.profile-text .m{
+  font-weight: bold;
+  background: linear-gradient(to right, #ddd 50%, #fed700 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn-group {
+  margin: 20px 0;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  margin: 2px;
+  border-radius: 30px;
+  border: 2px solid #e5e5e5;
+  background-color: #333;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+  font-size: medium;
+}
+.btn:hover {
+  background-color: #fed700;
+  color: #202020;
+  border-color: #fed700;
+}
+
+.social a {
+  margin-right: 12px;
+  font-size: 20px;
+  color: #e5e5e5;
+  transition: 0.4s;
+}
+.social a:hover {
+  color: #fed700;
+  transform: rotate(360deg);
+}
+
+/* --------------------------- About --------------------------- */
+.about-area {
+  padding: 100px 0;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px; 
+}
+.about-show{
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(132, 126, 126, 0.6); 
+  font-size: 20px;
+
+}
+.about-title h4 {
+  font-size: 36px;
+  color: #fed700;
+  margin-bottom: 20px;
+}
+.about-title ul {
+  color: #ddd;
+  margin-left:25px;
+}
+.about-title ul li {
+  margin-bottom: 12px;
+  list-style-type: disc;
+}
+
+
+
+/* --------------------------- Education --------------------------- */
+.education-content {
+  padding: 80px 0;
+}
+.education-content .title {
+  font-size: 32px;
+  color: #fed700;
+  margin-bottom: 20px;
+}
+.timeline {
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(132, 126, 126, 0.6); 
+}
+.timeline-item {
+  padding-left: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #fed700;
+}
+.circle-dot {
+  width: 14px;
+  height: 14px;
+  background: #fed700;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.timeline-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.timeline-text {
+  font-size: 15px;
+  color: #ccc;
+  text-align: justify;
+}
+
+#experience{
+  margin-top: 50px;
+}
+
+
+/*-------------------------- Skill --------------------------*/
+.skill-content {
+  padding: 100px 0;
+}
+
+.skill-title h4 {
+  font-size: 32px;
+  color: #fed700;
+  margin-bottom: 20px;
+}
+.skill-show{
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(132, 126, 126, 0.6); 
+}
+
+
+/* ===== Skills Grid ===== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 35px;
+  justify-items: center;
+}
+
+.skill {
+
+  border-radius: 12px;
+  padding: 25px 15px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.1);
+}
+
+.skill:hover {
+  background: #ffcc00;
+  color: #fed700;
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.6);
+  background:none ;
+}
+
+.skill img {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 12px;
+  transition: 0.3s ease;
+}
+
+.skill:hover img {
+  transform: scale(1.1);
+}
+
+.skill p {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.5px;
+  
+}
+
+
+
+/* --------------------------- Projects --------------------------- */
+.project-content {
+  padding: 100px 0;
+ 
+}
+.project-title h4 {
+  font-size: 32px;
+  color: #fed700;
+  margin-bottom: 20px;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.project {
+  flex: 0 1 300px;   /* prevent stretching */
+  max-width: 300px; /* enforce equal width */
+  padding: 25px;
+  border: 2px solid #444;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 0 20px rgba(132, 126, 126, 0.6);
+}
+
+.project:hover {
+  color: #fed700;
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.6);
+  background:none ;
+}
+.project i {
+  background: #fed700;
+  color: #202020;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 60px;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* --------------------------- Contact --------------------------- */
+.contact-content {
+  padding: 100px 0;
+}
+.contact-title h4 {
+  font-size: 32px;
+  color: #fed700;
+  margin-bottom: 20px;
+}
+.contact form {
+  max-width: 600px;
+  margin: auto;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(132, 126, 126, 0.6); 
+}
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 3px solid #444;
+  color: white;
+}
+.submit {
+  display: inline-block;
+  padding: 10px 26px;
+  border-radius: 50px; 
+  border: 2px solid #fff; 
+  background-color: #333; 
+  color: #fff; 
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.submit:hover {
+  background-color: #fed700;
+  color: #202020;
+  border-color: #fed700;
+}
+
+/* --------------------------- Footer --------------------------- */
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  border-top: 3px solid rgb(129, 126, 126);
+  font-size: 14px;
+}
+
+/* --------------------------- Responsive --------------------------- */
+@media (max-width: 991px) {
+  .about {
+    flex-direction: column;
+  }
+  .navbar {
+    display: none;
+  }
+  .menu_icon {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile-text h1 {
+    font-size: 2.2rem;
+  }
+  .FirstElement {
+    padding: 3rem 0;
+  }
+}
